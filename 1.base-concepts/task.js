@@ -16,9 +16,13 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
- /* if (typeof percent == string) {
-    
-  }*/
+  percent = Number(percent);
+  contribution = Number(contribution);
+  amount = Number(amount);
+  countMonths = Number(countMonths);
+  if (isNaN(percent) || isNaN(contribution) || isNaN(amount) || isNaN(countMonths)  ) {
+    return false;
+  }
   
   percent = percent / 100 / 12;
   let body = amount - contribution;
