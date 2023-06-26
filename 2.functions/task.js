@@ -1,3 +1,5 @@
+//задача 1
+
 function getArrayParams(...arr) {
   let min = Math.min(...arr);
   console.log(min);
@@ -14,7 +16,9 @@ function getArrayParams(...arr) {
   return { min: min, max: max, avg: avg };
 }
 
+//задача 2
 
+//задание 1
 function summElementsWorker(...arr) {
   let sum;
   let length = arr.length;
@@ -29,15 +33,24 @@ function summElementsWorker(...arr) {
   return sum;
 }
 
-
-
+//задание 2
 function differenceMaxMinWorker(...arr) {
-  if(arr.length > 0) {
-
-    return max;
-   }
+  let min;
+  let max;
+  let length = arr.length;
+  if(length > 0) {
+    min = Math.min(...arr);
+    console.log(min);
+    max = Math.max(...arr);
+    console.log(max);
+   } else {
+    max = 0;
+    min = 0;
+  };
+  return {max: max, min: min};
 }
 
+//задание 3
 function differenceEvenOddWorker(...arr) {
   if(arr.length > 0) {
   
@@ -45,12 +58,15 @@ function differenceEvenOddWorker(...arr) {
     }
 }
 
+//задание 4
 function averageEvenElementsWorker(...arr) {
   if(arr.length > 0) {
   
     return max;
     }
 }
+
+//задача 3
 
 function makeWork (arrOfArr, func) {
 
