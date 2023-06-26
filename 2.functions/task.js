@@ -17,7 +17,7 @@ function getArrayParams(...arr) {
 
 function summElementsWorker(...arr) {
   if(arr.length > 0) {
-    let sum = arr.reduce(function (accumulator, currentValue) {
+    sum = arr.reduce(function (accumulator, currentValue) {
       return accumulator + currentValue;
     });
    } else if(arr.length <= 0) {
