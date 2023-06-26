@@ -20,10 +20,11 @@ function summElementsWorker(...arr) {
     let sum = arr.reduce(function (accumulator, currentValue) {
       return accumulator + currentValue;
     });
-    return sum;
+
    } else if(arr.length =< 0) {
      sum = 0;
    }
+  return sum;
 }
 
 function differenceMaxMinWorker(...arr) {
