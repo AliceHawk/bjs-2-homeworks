@@ -47,7 +47,7 @@ function differenceMaxMinWorker(...arr) {
     max = 0;
     min = 0;
   };
-  return {max: max, min: min};
+  return max - min;
 }
 
 //задание 3
