@@ -16,24 +16,35 @@ function getArrayParams(...arr) {
 
 
 function summElementsWorker(...arr) {
-  if(arr.length >= 0) {
+  if(arr.length > 0) {
     let sum = arr.reduce(function (accumulator, currentValue) {
       return accumulator + currentValue;
     });
     return sum;
+   } else {
+     sum = 0;
    }
 }
 
 function differenceMaxMinWorker(...arr) {
+  if(arr.length > 0) {
 
+    return max;
+   }
 }
 
 function differenceEvenOddWorker(...arr) {
-
+  if(arr.length > 0) {
+  
+    return min;
+    }
 }
 
 function averageEvenElementsWorker(...arr) {
-
+  if(arr.length > 0) {
+  
+    return max;
+    }
 }
 
 function makeWork (arrOfArr, func) {
