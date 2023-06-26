@@ -20,10 +20,9 @@ function summElementsWorker(...arr) {
     let sum = arr.reduce(function (accumulator, currentValue) {
       return accumulator + currentValue;
     });
-
-   } else if(arr.length =< 0) {
+   } else if(arr.length <= 0) {
      sum = 0;
-   }
+   };
   return sum;
 }
 
