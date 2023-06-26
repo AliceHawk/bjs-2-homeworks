@@ -21,7 +21,7 @@ function summElementsWorker(...arr) {
       return accumulator + currentValue;
     });
     return sum;
-   } else {
+   } else if(arr.length =< 0) {
      sum = 0;
    }
 }
