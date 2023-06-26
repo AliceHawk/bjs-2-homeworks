@@ -16,10 +16,12 @@ function getArrayParams(...arr) {
 
 
 function summElementsWorker(...arr) {
-  let sum = arr.reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue;
-  });
-  return sum;
+  if(arr.length > 0) {
+    let sum = arr.reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue;
+    });
+    return sum;
+   }
 }
 
 function differenceMaxMinWorker(...arr) {
