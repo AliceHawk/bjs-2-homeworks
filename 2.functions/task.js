@@ -84,7 +84,7 @@ function differenceEvenOddWorker(...arr) {
     sumOddElement = 0;
     sumEvenElement = 0;
   };
-  return {sumOddElement , sumEvenElement};
+  return sumEvenElement - sumOddElement;
 }
 
 //задание 4
