@@ -52,17 +52,49 @@ function differenceMaxMinWorker(...arr) {
 
 //задание 3
 function differenceEvenOddWorker(...arr) {
-  if(arr.length > 0) {
-  
-    return min;
+  let sumEvenElement;
+  let sumOddElement;
+  let length = arr.length;
+  if(length > 0) {
+    let EvenElement = arr.filter(function(elem) {
+    if (elem % 2 == 0) {
+      return true;
+    } else {
+      return false;
     }
+   });
+
+  sumEvenElement = EvenElement.reduce(function (accumulator, EvenElement) {
+    return accumulator + EvenElement;
+  });
+
+
+  let OddElement = arr.filter(function(elem) {
+    if (elem % 2 != 0) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  //console.log(OddElement);
+  sumOddElement = OddElement.reduce(function (accumulator, OddElement) {
+    return accumulator + OddElement;
+  });
+   } else {
+    sumOddElement = 0;
+    sumEvenElement = 0;
+  };
+  return {sumOddElement , sumEvenElement};
 }
 
 //задание 4
 function averageEvenElementsWorker(...arr) {
-  if(arr.length > 0) {
+  let length = arr.length;
+  if(length > 0) {
   
-    return max;
+    } else {
+    OddElement = 0;
+    EvenElement = 0;
     }
 }
 
