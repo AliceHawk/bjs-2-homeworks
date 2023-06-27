@@ -89,14 +89,33 @@ function differenceEvenOddWorker(...arr) {
 
 //задание 4
 function averageEvenElementsWorker(...arr) {
-  let length = arr.length;
-  if(length > 0) {
   
-    } else {
-    OddElement = 0;
-    EvenElement = 0;
-    }
+  let sumEvenElement;
+  let length = arr.length;
+  let countEvenElement;
+
+  if(length > 0) {
+    let EvenElement = arr.filter(function(elem) {
+      if (elem % 2 == 0) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    sumEvenElement = EvenElement.reduce(function (accumulator, EvenElement) {
+      return accumulator + EvenElement;
+    });
+
+    countEvenElement = EvenElement.length;
+  } else {
+    countEvenElement = 0;
+  };
+  
+  
+  return sumEvenElement / countEvenElement;
 }
+
 
 //задача 3
 
