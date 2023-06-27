@@ -109,7 +109,7 @@ function averageEvenElementsWorker(...arr) {
 
     countEvenElement = EvenElement.length;
   } else {
-    countEvenElement = 0;
+    return 0;
   };
   
   
