@@ -14,7 +14,7 @@ function getUsersNamesInAgeRange(users, gender) {
         if (users.length === 0) {
             return 0;
         };
-        const filteredUsers = people.filter(function(user){
+        const filteredUsers = users.filter(function(user){
             return user.gender === gender;
         });
         let ages = filteredUsers.map(function(user){
