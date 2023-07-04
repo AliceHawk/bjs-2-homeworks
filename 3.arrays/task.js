@@ -11,5 +11,20 @@ function compareArrays(arr1, arr2) {
 }
 
 function getUsersNamesInAgeRange(users, gender) {
-  
-}
+        if (users.length === 0) {
+            return 0;
+        };
+        const filteredUsers = people.filter(function(user){
+            return user.gender === gender;
+        });
+        let ages = filteredUsers.map(function(user){
+            return user.age;
+        });
+        if (ages.length === 0) {
+            return 0;
+        };
+        let agesSum = ages.reduce(function(accumulator, age) {
+            return accumulator + age;
+        }, 0);
+        return agesSum / ages.length;
+    }
